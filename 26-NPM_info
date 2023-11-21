@@ -1,0 +1,31 @@
+// npm - node package manager
+// resue our code in another project
+// use someone's project
+
+// package === dependency === module
+// it's mean the same thing
+// there's no any control of npm packages
+
+// when we install node we install npm
+
+// npm - global command, comes with node
+// npm --version
+
+// local dependency - use it only in this particular project
+// npm i <packageName>
+
+// global dependency - use it in any project
+// npm install -g <packageName>
+// sudo install -g <packageName> (linux)
+
+// package.json - manifest file (stores imortant info about project/package)
+// manual approach (create package.json in the root, create properties etc)
+// npm init (step by step, press enter to skip)
+// npm init -y (everything default)
+
+const _ = require("lodash");
+
+const items = [1, [2, [3, [4]]]];
+// make from array with a lot of nested array a flat array
+const newItems = _.flattenDeep(items);
+console.log(newItems);
